@@ -1,0 +1,71 @@
+.header {
+    font-weight: 500;
+    line-height: calc(16.41 / 14);
+    letter-spacing: calc(14px * 0.02);
+    border-bottom: 1px solid #ececec;
+}
+.container{
+    @extend %flex-center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.contacts{
+    @extend %list;
+    @extend %flex-center;
+}
+.contacts__link{
+    @extend %link;
+}
+.contacts__icon{
+    margin-right: 10px;
+}
+.contacts__item {
+    margin: 0 25px;
+}
+
+
+.logo {
+    @extend %link;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(30.52 / 26);
+    color: $accent-color;
+    letter-spacing: calc(26px * 0.03);
+    padding: 24px 0;
+}
+
+.logo__subtext {
+    color: $dark-font;
+}
+
+.navigation__link {
+    @extend %link;
+    color: $contact-color;
+    display: flex;
+    align-items: center;
+    transition: color 250ms $time-func;
+}
+.navigation {
+    margin-right: auto;
+    margin-left: 93px;
+}
+.navigation__list{
+    @extend %flex-center;
+    @extend %list;
+}
+.navigation__item {
+    margin: 0 25px;
+}
+
+.navigation__item:first-child,
+.contacts__item:first-child {
+    margin-left: 0;
+}
+
+.navigation__item:last-child,
+.contacts__item:last-child
+ {
+    margin-right: 0;
+}
