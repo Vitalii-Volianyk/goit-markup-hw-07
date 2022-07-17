@@ -1,0 +1,138 @@
+.card-set{
+	@extend %list;
+	@include flex();
+	margin: -15px;
+    flex-wrap: wrap;
+	--light-font: #afb1b8;
+}
+.card-set__item{
+	margin: 15px;
+}
+.card-set__item--fixed-width{
+    width: calc(100% / 4 - 30px);
+}
+.card-set__icon{
+	background-color: $lightness-back;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	height: 120px;
+	@include flex(center,center)
+}
+.card-set__title{
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: inherit;
+	line-height: calc(16.41/14);
+}
+.card-set__description{
+	line-height: calc(24/14);
+	color: $contact-color;
+}
+.card-set__team-about{
+	padding: 30px 0;
+	text-align: center;
+}
+.card-set_worker-name{
+	line-height: calc(18.75/16);
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.card-set_profession{
+	font-weight: 400;
+	font-size: 16px;
+	color: $contact-color;
+	margin-bottom: 16px;
+}
+.card-set__item--bordered{
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	background-color: $light-font;
+}
+.card-set__link{
+    @extend %link;
+    &:hover,&:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        outline: none;
+    }
+}
+.card-set__description{
+    position: relative;
+    overflow: hidden;
+}
+.card-set__description-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-color;
+    opacity: 0.9;
+    padding: 63px 24px;
+    color: $light-font;
+    font-size: 18px;
+    line-height: calc(28/18);
+    transform: translateY(100%);
+    margin: 0;
+    transition: transform 250ms $time-func;
+    .card-set__link:hover &,.card-set__link:focus &{
+        transform: translateY(0%)
+    }
+}
+.card-set__about{
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+    padding: 20px 24px;
+}
+.card-set__name{
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: calc(18px*0.06);
+    margin: 0;
+}
+.card-set__type{
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: $contact-color;
+    margin: 4px 0 0;
+}
+
+.image-set {
+	@extend %list;
+	@include flex();
+	margin: 0 -15px;
+}
+.image-set__item {
+	margin: 15px;
+	position: relative;
+}
+.image-set__title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	color: $light-font;
+	@include flex(center,center);
+	background-color: $bg-color;
+	opacity: 0.8;
+	margin: 0;
+	text-transform: uppercase;
+}
+.image-set__link{
+	@extend %link;
+	color: $icon-fill;
+	border: 1px solid $icon-fill;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+	transition: border 250ms $time-func, color 250ms $time-func;
+	&:hover{
+		color: $accent-color;
+		border: 1px solid $accent-color;
+		outline: none;
+	}
+}
