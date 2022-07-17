@@ -1,0 +1,36 @@
+.hero {
+	background-color: $bg-color;
+	color: $light-font;
+	padding: 200px 0;
+	max-width: 1600px;
+	height: 600px;
+	text-align: center;
+	margin: 0 auto;
+	background-image: linear-gradient(to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)),
+		url(../images/herooverlay.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.heading {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(42.19 / 36);
+}
+
+.hero__heading {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 44px;
+	letter-spacing: calc(44px * 0.06);
+	line-height: calc(60 / 44);
+	margin-bottom: 30px;
+}
+
+.hero__button{
+	@extend %btn;
+	color: inherit;
+}
