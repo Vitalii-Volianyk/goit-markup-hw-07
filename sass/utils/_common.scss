@@ -10,6 +10,7 @@
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
 body {
 	font-family: "Roboto", sans-serif;
 	color: $font-color;
@@ -21,8 +22,7 @@ body {
 	overflow: hidden;
 }
 
-ul,
-h1 {
+h1,h2,h3 {
 	padding: 0;
 	margin: 0;
 }
@@ -34,8 +34,8 @@ img {
 }
 svg {
 	fill: currentColor;
-	--color1: $font-color;
-	--color2: $accent-color;
+	--color1: #212121;
+	--color2: #2196F3;
 }
 @mixin flex($align: 0, $justify: 0) {
 	display: flex;
@@ -72,4 +72,13 @@ svg {
 		background-color: $accent-hover;
 		outline: none;
 	}
+}
+.section{
+	padding: 94px 0;
+}
+.section--zero-padding-bot{
+	padding-bottom: 0;
+}
+.section--bg-light{
+	background-color: $lightness-back;
 }
