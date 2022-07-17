@@ -24,6 +24,7 @@
 	transition: background-color 250ms $time-func, color 250ms $time-func; 
 	&:hover, &:active, &:focus{
 		background-color: $accent-color;
+		color: $light-font;
 		outline: none;
 	}
 }
