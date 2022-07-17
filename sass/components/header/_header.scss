@@ -12,7 +12,6 @@
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
-	
 }
 .contacts{
 	@extend %list;
@@ -22,7 +21,7 @@
 .contacts__link{
 	@include flex(center);
 	@extend %link;
-	color: var(--contact-color);
+	color: $contact-color;
 	transition: color 250ms $time-func;
 	&:hover, &:active, &:focus {
 		color: $accent-color;
