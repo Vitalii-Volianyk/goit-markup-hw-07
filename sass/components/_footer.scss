@@ -1,0 +1,92 @@
+.footer{
+	background-color: $bg-color;
+	padding: 60px 0;
+	--contact-color: rgba(255, 255, 255, 0.6);
+	--light-font: #ffffff;
+}
+.footer__collumn{
+	margin-right: 70px;
+}
+.social{
+	@extend %list;
+	@include flex(center, center);
+}
+.social__item{
+	margin: 0 10px 0 0;
+}
+.social__link{
+	@include flex(center, center);
+	color: var(--light-font);
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+	background-color: $footer-soclink;
+	transition: background-color 250ms $time-func, color 250ms $time-func; 
+	&:hover, &:active, &:focus{
+		background-color: $accent-color;
+		outline: none;
+	}
+}
+
+
+.logo__subtext--white{
+	color: $light-font;
+}
+.footer__logo{
+	padding: 0;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.footer__contacts{
+	display: inline;
+	margin: 0;
+}
+.footer__contacts .contacts__item{
+	line-height: (21/14);
+	margin: 0;
+}
+.footer__contacts .contacts__item:nth-child(2){
+	margin: 9px 0;
+}
+.contacts__adress{
+	color: $light-font;
+}
+
+.footer__subtitle, .subscribe__title{
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: $light-font;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+
+.subscribe{
+	margin-top: 14px;
+	@include flex();
+	flex-wrap: wrap;
+}
+.subscribe__input{
+	padding: 15px 16px;
+	border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	color: $footer-link;
+	width: 358px;
+}
+.subscribe__button{
+	@extend %btn;
+	border: none;
+	color: $light-font;
+	padding: 10px 29px;
+	font-size: 16px;
+	margin-left: 12px;
+	@include flex(center);
+}
+.subscribe__icon{
+	margin-left: 10px; 
+}
