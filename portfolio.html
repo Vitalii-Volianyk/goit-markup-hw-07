@@ -7,48 +7,39 @@
 		<title>Web Studio</title>
 		<link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 
 	<body>
 		<header class="header">
-			<div class="container">
-				<a class="logo" href="index.html" lang="en">Web<span class="sub-logo">Studio</span></a>
+			<div class="container header__container">
+				<a class="logo" href="index.html" lang="en">Web<span class="logo__subtext">Studio</span></a>
 				<nav class="navigation">
-					<ul class="list">
-						<li class="navigation-item">
-							<a class="navigation-link" href="index.html">Студія</a>
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a class="navigation__link" href="index.html">Студія</a>
 						</li>
-						<li class="navigation-item">
-							<a class="navigation-link current" href="portfolio.html">Портфоліо</a>
+						<li class="navigation__item">
+							<a class="navigation__link current" href="portfolio.html">Портфоліо</a>
 						</li>
-						<li class="navigation-item">
-							<a class="navigation-link" href="contacts.html">Контакти</a>
-						</li>
+						<li class="navigation__item"><a class="navigation__link" href="contacts.html">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="contacts list">
-					<li class="contact-item"
-						><a class="contact-link" href="mailto:info@devstudio.com">
-							<svg width="16" height="12">
+				<ul class="contacts">
+					<li class="contacts__item"
+						><a class="contacts__link" href="mailto:info@devstudio.com">
+							<svg class="contacts__icon" width="16" height="12">
 								<use href="./images/icons.svg#icon-mail"></use>
 							</svg>
 							info@devstudio.com</a
 						></li
 					>
-					<li class="contact-item"
-						><a class="contact-link" href="tel:+380961111111">
-							<svg width="10" height="16">
+					<li class="contacts__item"
+						><a class="contacts__link" href="tel:+380961111111">
+							<svg class="contacts__icon" width="10" height="16">
 								<use href="./images/icons.svg#icon-smartphone"></use>
 							</svg>
 							+38 096 111 11 11</a
@@ -57,7 +48,7 @@
 				</ul>
 			</div>
 		</header>
-		<main>
+		<main class="visually-hidden">
 			<section class="section">
 				<div class="container">
 					<h1 class="heading" hidden> Наші проекти </h1>
@@ -72,7 +63,12 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio1.jpg" alt="Ноутбук з відкритим сайтом" width="370" height="294" />
+									<img
+										src="./images/portfolio/portfolio1.jpg"
+										alt="Ноутбук з відкритим сайтом"
+										width="370"
+										height="294"
+									/>
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -87,7 +83,7 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio2.jpg" alt="Баскетболісти" width="370" height="294" />
+									<img src="./images/portfolio/portfolio2.jpg" alt="Баскетболісти" width="370" height="294" />
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -102,7 +98,12 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio3.jpg" alt="Логотип ресторану, з рибою" width="370" height="294" />
+									<img
+										src="./images/portfolio/portfolio3.jpg"
+										alt="Логотип ресторану, з рибою"
+										width="370"
+										height="294"
+									/>
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -117,7 +118,7 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio4.jpg" alt="Навушники" width="370" height="294" />
+									<img src="./images/portfolio/portfolio4.jpg" alt="Навушники" width="370" height="294" />
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -132,7 +133,7 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio5.jpg" alt="Дві коробки" width="370" height="294" />
+									<img src="./images/portfolio/portfolio5.jpg" alt="Дві коробки" width="370" height="294" />
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -147,7 +148,7 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio6.jpg" alt="Монітор" width="370" height="294" />
+									<img src="./images/portfolio/portfolio6.jpg" alt="Монітор" width="370" height="294" />
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -162,7 +163,7 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio7.jpg" alt="Відкрита книга" width="370" height="294" />
+									<img src="./images/portfolio/portfolio7.jpg" alt="Відкрита книга" width="370" height="294" />
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -177,7 +178,7 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio8.jpg" alt="Бірка" width="370" height="294" />
+									<img src="./images/portfolio/portfolio8.jpg" alt="Бірка" width="370" height="294" />
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -192,7 +193,7 @@
 						<li class="project-item">
 							<a class="project-link" href="">
 								<div class="project-desc">
-									<img src="./images/portfolio9.jpg" alt="Ноутбук" width="370" height="294" />
+									<img src="./images/portfolio/portfolio9.jpg" alt="Ноутбук" width="370" height="294" />
 									<p class="description-text"
 										>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p
@@ -209,49 +210,51 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container">
-				<div class="footer-coll">
-					<a class="logo" href="index.html" lang="en">Web<span class="sub-logo">Studio</span></a>
-					<ul class="contacts list">
-						<li class="contact-item">
-							<address class="address-info">м. Київ, пр-т Лесі Українки, 26</address>
+			<div class="container footer__container">
+				<div class="footer__collumn">
+					<a class="logo footer__logo" href="index.html" lang="en"
+						>Web<span class="logo__subtext logo__subtext--white">Studio</span></a
+					>
+					<ul class="contacts footer__contacts">
+						<li class="contacts__item">
+							<address class="contacts__adress">м. Київ, пр-т Лесі Українки, 26</address>
 						</li>
-						<li class="contact-item"
-							><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
+						<li class="contacts__item"
+							><a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
 						>
-						<li class="contact-item"><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+						<li class="contacts__item"><a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
 					</ul>
 				</div>
-				<div class="footer-coll">
-					<p class="footer-subtitle">Приєднуйтесь</p>
-					<ul class="social-list list">
-						<li class="social-item">
-							<a class="social-link link" aria-label="instagram" href="">
-								<svg class="social-icon" width="20" height="20">
+				<div class="footer__collumn">
+					<p class="footer__subtitle">Приєднуйтесь</p>
+					<ul class="social">
+						<li class="social__item">
+							<a class="social__link" aria-label="instagram" href="">
+								<svg class="social__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-instagram"></use>
 								</svg>
 								<span class="visually-hidden">instagram</span>
 							</a>
 						</li>
-						<li class="social-item">
-							<a class="social-link link" aria-label="twitter" href="">
-								<svg class="social-icon" width="20" height="20">
+						<li class="social__item">
+							<a class="social__link" aria-label="twitter" href="">
+								<svg class="social__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-twitter"></use>
 								</svg>
 								<span class="visually-hidden">twitter</span>
 							</a>
 						</li>
-						<li class="social-item">
-							<a class="social-link link" aria-label="facebook" href="">
-								<svg class="social-icon" width="20" height="20">
+						<li class="social__item">
+							<a class="social__link" aria-label="facebook" href="">
+								<svg class="social__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-facebook"></use>
 								</svg>
 								<span class="visually-hidden">facebook</span>
 							</a>
 						</li>
-						<li class="social-item">
-							<a class="social-link link" aria-label="linkedin" href="">
-								<svg class="social-icon" width="20" height="20">
+						<li class="social__item">
+							<a class="social__link" aria-label="linkedin" href="">
+								<svg class="social__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-linkedin"></use>
 								</svg>
 								<span class="visually-hidden">linkedin</span>
@@ -259,13 +262,13 @@
 						</li>
 					</ul>
 				</div>
-				<div class="footer-coll">
-					<form class="footer-form subscribe" action="#">
-						<label class="form-text" for="email-subscribe">Підписатись на розсилку</label>
-						<input class="form-input" type="email" name="email" id="email-subscribe" placeholder="E-mail" />
-						<button class="form-button" type="submit"
+				<div class="footer__collumn">
+					<form class="subscribe" action="#">
+						<label class="subscribe__title" for="email-subscribe">Підписатись на розсилку</label>
+						<input class="subscribe__input" type="email" name="email" id="email-subscribe" placeholder="E-mail" />
+						<button class="subscribe__button" type="submit"
 							>Підписатись
-							<svg class="send-icon" width="24" height="24">
+							<svg class="subscribe__icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-send"></use>
 							</svg>
 						</button>
