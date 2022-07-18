@@ -500,14 +500,14 @@ svg {
   text-align: center;
 }
 
-.card-set_worker-name {
+.card-set__worker-name {
   line-height: 1.171875;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.card-set_profession {
+.card-set__profession {
   font-weight: 400;
   font-size: 16px;
   color: #757575;
