@@ -1,0 +1,26 @@
+.social {
+	@extend %list;
+	@include flex(center, center);
+}
+
+.social__item {
+	margin: 0 10px 0 0;
+}
+
+.social__link {
+	@include flex(center, center);
+	color: var(--light-font);
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+	background-color: $footer-soclink;
+	transition: background-color 250ms $time-func, color 250ms $time-func;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $accent-color;
+		color: $light-font;
+		outline: none;
+	}
+}
