@@ -6,26 +6,7 @@
 	--contact-color:$contact-color;
 }
 @import "container";
-.contacts{
-	@extend %list;
-	@include flex(center);
-	margin: 0 -25px;
-}
-.contacts__link{
-	@include flex(center);
-	@extend %link;
-	color: $contact-color;
-	transition: color 250ms $time-func;
-	&:hover, &:active, &:focus {
-		color: $accent-color;
-	}
-}
-.contacts__icon{
-	margin-right: 10px;
-}
-.contacts__item {
-	margin: 0 25px;
-}
+
 
 
 .logo {
