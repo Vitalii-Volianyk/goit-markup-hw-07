@@ -8,11 +8,7 @@
 .header__container, .footer__container{
 	@include flex();
 }
-.container{
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
+
 .contacts{
 	@extend %list;
 	@include flex(center);
